@@ -79,8 +79,9 @@ export function generateStaticParams() {
   }))
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projectData[params.id]
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const {id} = await params;
+  const project = projectData[id];
 
   if (!project) {
     notFound()
