@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { notFound } from "next/navigation"
 import { projects } from "@/data/projects"
+import { ProjectGallery } from "@/components/project-gallery"
 
 export default async function ProjectPage({
   params,
 }: {
   params: Promise<{ id: string }>
 }) {
+
   const { id } = await params
   const project = projects.find((p) => p.id === id)
 
@@ -94,14 +96,12 @@ export default async function ProjectPage({
             </div>
           </div>
 
-          {/* Project Image / Visual */}
-          <div className="mb-12 rounded-lg overflow-hidden border border-white/20 bg-black/40">
-            <img
-              src={project.images[0]?.src || "/placeholder.svg"}
-              alt={project.name}
-              className="w-full h-auto"
-            />
-          </div>
+          {/* Gallery (Client Component) */}
+          <ProjectGallery
+            images={project.images}
+            category={project.category}
+          />
+
 
           {/* Description */}
           <section className="mb-12">
