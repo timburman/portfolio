@@ -126,20 +126,20 @@ export const projects: Project[] = [
     role: "Blockchain & Systems Developer",
     timeline: "2025",
 
-    github: "https://github.com/timburman/DKP",
-    live: "https://dkp.vercel.app",
+    github: "https://github.com/timburman/dkp-frontend",
+    live: "https://dkp-frontend-v.vercel.app/",
 
     images: [
       {
-        src: "/projects/dkp/overview.png",
+        src: "/projects/dkp/Home.png",
         alt: "DKP platform overview and submission flow",
       },
       {
-        src: "/projects/dkp/reputation.png",
+        src: "/projects/dkp/Submission.png",
         alt: "Proof-of-Knowledge reputation mechanism",
       },
       {
-        src: "/projects/dkp/ipfs-flow.png",
+        src: "/projects/dkp/Content.png",
         alt: "IPFS-based decentralized storage architecture",
       },
     ],
