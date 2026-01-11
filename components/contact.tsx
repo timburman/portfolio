@@ -1,11 +1,11 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail} from "lucide-react"
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, url: "#" },
-  { name: "LinkedIn", icon: Linkedin, url: "#" },
+  { name: "GitHub", icon: Github, url: "https://github.com/timburman" },
+  { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/aryan-kaushik1/" },
   {
     name: "X",
     icon: () => (
@@ -13,9 +13,9 @@ const socialLinks = [
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
       </svg>
     ),
-    url: "#",
+    url: "https://x.com/timburman69",
   },
-  { name: "Email", icon: Mail, url: "mailto:hello@aryankaushik.dev" },
+  { name: "Email", icon: Mail, url: "mailto:mail.aryankaushik@gmail.com" },
 ]
 
 export function Contact() {
@@ -42,6 +42,7 @@ export function Contact() {
               <a
                 key={idx}
                 href={link.url}
+                target="_blank"
                 className="w-12 h-12 rounded-full border border-white/40 bg-white/5 hover:bg-white/10 hover:border-white/60 flex items-center justify-center transition-all group"
                 aria-label={link.name}
               >
@@ -52,9 +53,20 @@ export function Contact() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-[#fa375e] hover:bg-[#fa375e]/90 text-white font-bold transition-colors">
-            See Full Resume
+          <Button
+            asChild
+            size="lg"
+            className="bg-[#fa375e] hover:bg-[#fa375e]/90 text-white font-bold transition-colors"
+          >
+            <a
+              href="/Aryan_Kaushik_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume
+            </a>
           </Button>
+
         </div>
       </div>
     </section>

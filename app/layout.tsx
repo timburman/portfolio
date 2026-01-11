@@ -8,27 +8,46 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Aryan Kaushik - Web3 Engineer",
-  description: "Portfolio of Aryan Kaushik, Web3 Engineer specializing in DAO governance and smart contracts",
-  generator: "v0.app",
-  icons: {
-    icon: [
+  title: {
+    default: "Aryan Kaushik — Web3 Engineer & DAO Governance",
+    template: "%s | Aryan Kaushik",
+  },
+  description:
+    "Web3 engineer specializing in DAO governance, smart contracts, and decentralized systems. Research-driven builder with production and open-source experience.",
+
+  metadataBase: new URL("https://aryankaushik.com"),
+
+  openGraph: {
+    title: "Aryan Kaushik — Web3 Engineer & DAO Governance",
+    description:
+      "Web3 engineer building DAO governance systems, smart contracts, and decentralized infrastructure.",
+    url: "https://aryankaushik.com",
+    siteName: "Aryan Kaushik",
+    images: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Aryan Kaushik — Web3 Engineer",
       },
     ],
-    apple: "/apple-icon.png",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Aryan Kaushik — Web3 Engineer",
+    description:
+      "DAO governance, smart contracts, and Web3 research.",
+    images: ["/og.png"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
   },
 }
+
 
 export default function RootLayout({
   children,
