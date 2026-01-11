@@ -185,7 +185,7 @@ export const projects: Project[] = [
     role: "Smart Contract & Frontend Developer",
     timeline: "2025",
 
-    github: "https://github.com/timburman/DAElect",
+    github: "https://github.com/timburman/DAElect-App",
     live: "",
 
     images: [
