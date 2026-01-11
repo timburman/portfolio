@@ -77,11 +77,11 @@ export const projects: Project[] = [
         alt: "Reactive Governance architecture and selective snapshot flow",
       },
       {
-        src: "/projects/reactive-governance/foundry-tests.png",
+        src: "/projects/reactive-governance/staking-contract-test.png",
         alt: "Foundry test suite simulating governance attack scenarios",
       },
       {
-        src: "/projects/reactive-governance/gas-analysis.png",
+        src: "/projects/reactive-governance/voting-contract-test.png",
         alt: "Gas comparison between Reactive Governance and ERC20Votes",
       },
     ],
@@ -186,20 +186,20 @@ export const projects: Project[] = [
     timeline: "2025",
 
     github: "https://github.com/timburman/DAElect",
-    live: "https://daelection.vercel.app",
+    live: "",
 
     images: [
       {
-        src: "/projects/daelection/dashboard.png",
+        src: "/projects/daelect/dashboard.png",
         alt: "DAElect governance dashboard",
       },
       {
-        src: "/projects/daelection/voting.png",
+        src: "/projects/daelect/voting.png",
         alt: "Proposal creation and voting interface",
       },
       {
-        src: "/projects/daelection/staking.png",
-        alt: "Token staking and rewards interface",
+        src: "/projects/daelect/deployment.png",
+        alt: "Token staking and voting contract deployment interface",
       },
     ],
   },
