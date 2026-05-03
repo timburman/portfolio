@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 
 type GHStats = {
   public_repos: number;
@@ -10,27 +9,90 @@ type GHStats = {
   following: number;
 };
 
+type LangStat = {
+  name: string;
+  color: string;
+  pct: number;
+};
+
 const GITHUB_USER = "timburman";
 
-const languages = [
+const FALLBACK_LANGUAGES = [
   { name: "Solidity", color: "#AA6746", pct: 42 },
   { name: "Python", color: "#3572A5", pct: 31 },
   { name: "TypeScript", color: "#3178c6", pct: 15 },
   { name: "JavaScript", color: "#f1e05a", pct: 12 },
 ];
 
+const LANGUAGE_COLORS: Record<string, string> = {
+  Solidity: "#AA6746",
+  Python: "#3572A5",
+  TypeScript: "#3178c6",
+  JavaScript: "#f1e05a",
+  HTML: "#e34c26",
+  CSS: "#563d7c",
+  Rust: "#dea584",
+  Go: "#00ADD8",
+  Java: "#b07219",
+  "C++": "#f34b7d",
+  Shell: "#89e051",
+  Vue: "#41b883",
+  Ruby: "#701516",
+  C: "#555555"
+};
+
 export default function GitHubStats() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [stats, setStats] = useState<GHStats | null>(null);
+  const [languages, setLanguages] = useState<LangStat[]>(FALLBACK_LANGUAGES);
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${GITHUB_USER}`)
-      .then((r) => r.json())
+      .then((r) => {
+        if (!r.ok) throw new Error("Rate limit or error");
+        return r.json();
+      })
       .then((d) => {
         if (d.public_repos !== undefined) setStats(d);
       })
-      .catch(() => {});
+      .catch(() => console.log("Using fallback for user stats due to rate limit."));
+
+    fetch(`https://api.github.com/users/${GITHUB_USER}/repos?per_page=100`)
+      .then((r) => {
+        if (!r.ok) throw new Error("Rate limit or error");
+        return r.json();
+      })
+      .then((repos) => {
+        if (!Array.isArray(repos)) return;
+        
+        const langCounts: Record<string, number> = {};
+        let totalCount = 0;
+        
+        repos.forEach((repo: any) => {
+          const lang = repo.language;
+          if (lang) {
+            langCounts[lang] = (langCounts[lang] || 0) + 1;
+            totalCount++;
+          }
+        });
+
+        if (totalCount > 0) {
+          const sortedLangs = Object.entries(langCounts)
+            .map(([name, count]) => ({
+              name,
+              color: LANGUAGE_COLORS[name] || "#" + Math.floor(Math.random()*16777215).toString(16),
+              pct: Math.round((count / totalCount) * 100),
+            }))
+            .sort((a, b) => b.pct - a.pct)
+            .slice(0, 4);
+            
+          if (sortedLangs.length > 0) {
+             setLanguages(sortedLangs);
+          }
+        }
+      })
+      .catch(() => console.log("Using fallback languages due to rate limit."));
   }, []);
 
   const statItems = [
