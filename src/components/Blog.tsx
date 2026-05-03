@@ -1,12 +1,15 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { blogPosts } from "@/data/portfolio";
+import Modal from "./ui/Modal";
 
 export default function Blog() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+  
+  const [selectedPost, setSelectedPost] = useState<any>(null);
 
   return (
     <div id="blog" ref={ref}>
@@ -26,9 +29,10 @@ export default function Blog() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: i * 0.1 }}
             className="bento-card group cursor-pointer"
+            onClick={() => setSelectedPost(post)}
           >
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.75rem" }}>
-                <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.75rem" }}>
+              <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
                 {post.tags.slice(0, 2).map((tag) => (
                   <span key={tag} className="tag" style={{ fontSize: "10px" }}>
                     {tag}
@@ -57,7 +61,7 @@ export default function Blog() {
               {post.excerpt}
             </p>
 
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <span
                 className="text-xs"
                 style={{ color: "var(--text-muted)" }}
@@ -84,6 +88,32 @@ export default function Blog() {
           <span className="cursor-blink ml-1">_</span>
         </span>
       </div>
+
+      <Modal
+        isOpen={!!selectedPost}
+        onClose={() => setSelectedPost(null)}
+        title={selectedPost?.title || "Article"}
+      >
+        {selectedPost && (
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-4 text-xs" style={{ color: "var(--text-muted)" }}>
+              <span>{selectedPost.date}</span>
+              <span>·</span>
+              <span>{selectedPost.readTime}</span>
+            </div>
+            
+            <div className="flex flex-wrap gap-2 mb-2">
+              {selectedPost.tags.map((tag: string) => (
+                <span key={tag} className="tag" style={{ fontSize: "10px" }}>{tag}</span>
+              ))}
+            </div>
+
+            <div className="text-sm leading-relaxed whitespace-pre-wrap" style={{ color: "var(--text-primary)" }}>
+              {selectedPost.expandedContent || selectedPost.excerpt}
+            </div>
+          </div>
+        )}
+      </Modal>
     </div>
   );
 }
