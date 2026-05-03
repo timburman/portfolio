@@ -92,12 +92,8 @@ export const metadata: Metadata = {
     creator: "@aryankaushik",
   },
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    shortcut: "/favicon.ico",
+    icon: "/icon.svg",
+    apple: "/icon.svg",
   },
   manifest: "/site.webmanifest",
   verification: {
