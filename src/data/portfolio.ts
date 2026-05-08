@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Aryan Kaushik",
-  title: "Smart Contract Engineer",
-  subtitle: "Backend & Data Systems",
+  title: "Protocol Engineer",
+  subtitle: "Blockchain & Python Systems Dev",
   email: "mail.aryankaushik@gmail.com",
   phone: "+91 79826 56751",
   location: "New Delhi, India",
@@ -10,14 +10,13 @@ export const personalInfo = {
   github: "https://github.com/timburman",
   website: "https://aryankaushik.com",
   summary:
-    "Software Engineer with specialized focus on Blockchain Architecture and Data Infrastructure. Experienced in building production-grade Smart Contracts using Foundry and developing Python-based automation systems for data analysis. Passionate about bridging the gap between on-chain logic and off-chain data processing to build robust decentralized applications.",
+    "Protocol Engineer focused on EVM mechanics, gas optimization, and robust off-chain infrastructure. Bridging the gap between smart contract research and high-performance Python systems. Ship fast, learn faster, optimize harder.",
 };
 
 export const currentlyBuilding = [
   "Chronos Vault — Crypto Dead Man's Switch",
   "Xandeum Network Explorer — Python RPC Crawler",
   "EVM Portfolio Intelligence Engine — True P&L Reports",
-  "Reactive Governance Protocol — 40% gas reduction",
 ];
 
 export const skills = {
@@ -99,6 +98,24 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    name: "Reactive Governance",
+    tagline: "Selective Snapshotting for DAO Voting",
+    description:
+      "A research-backed governance framework that optimizes on-chain voting by eliminating transfer overhead through a selective snapshotting mechanism. Reduces gas costs by up to 40% compared to standard ERC20Votes.",
+    period: "Apr 2026",
+    tags: ["Solidity", "Foundry", "Gas Optimization", "Governance"],
+    status: "Complete",
+    highlight: true,
+    links: { github: "https://github.com/timburman/Reactive-Governance", paper: "https://zenodo.org/records/20037058" },
+    bullets: [
+      "Eliminates transfer overhead in governance tokens",
+      "Formal security analysis against Flash Loan attacks",
+      "Benchmark-proven ~17,715 gas marginal cost per snapshot",
+    ],
+    expandedContent:
+      "Reactive Governance solves the 'Transfer Overhead' problem in DAOs. Standard governance tokens require costly state updates on every transfer. By utilizing a selective snapshotting pattern, we defer calculations to the voting period itself. This research includes a production-ready Solidity implementation and formal verification of the snapshotting invariants, ensuring that the system remains resistant to late-stake and flash loan manipulations while maintaining industry-leading gas efficiency.",
+  },
   {
     name: "Chronos Vault",
     tagline: "Crypto Dead Man's Switch",
@@ -192,6 +209,13 @@ export const education = [
 
 export const achievements = [
   {
+    title: "Zenodo Research Publication",
+    desc: "Paper: 'Reactive Governance: A Selective Snapshotting Framework for Secure and Gas-Efficient DAO Voting' published on Zenodo.",
+    icon: "",
+    expandedContent: "Introduced a novel selective snapshotting framework for on-chain DAO voting. The protocol eliminates transfer overhead and ensures security with minimal marginal cost (~17,715 gas). Included formal system modeling, security analysis, and empirical benchmarking. The research demonstrates how to scale decentralized governance without compromising on-chain efficiency.",
+    link: "https://zenodo.org/records/20037058"
+  },
+  {
     title: "IEEE Conference Publication",
     desc: "Paper: 'Plant Disease Recognition (Integrating Deep Learning for Accurate Diagnosis and Sustainable Agriculture)' published at an IEEE conference.",
     icon: "",
@@ -233,12 +257,12 @@ export const terminalCommands: Record<string, string> = {
   whoami      — Quick intro`,
 
   about: `> Aryan Kaushik
-> Smart Contract Engineer | Backend & Data Systems
+> Protocol Engineer | Blockchain & Python Systems Dev
 > Location: New Delhi, India
-> Focus: Blockchain Architecture & Data Infrastructure
+> Focus: Smart Contract Research & Off-Chain Infrastructure
 > Currently building: Chronos Vault & EVM Analytics`,
 
-  whoami: "aryan@portfolio:~$ — Smart Contract Engineer & DeFi builder",
+  whoami: "aryan@portfolio:~$ — Protocol Engineer & Python Systems Developer",
 
   skills: `Blockchain:  Solidity ████████████ 90%
 Foundry:     ███████████░ 88%
