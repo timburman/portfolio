@@ -11,9 +11,9 @@ const jetbrains = JetBrains_Mono({
 
 const SITE_URL = "https://aryankaushik.com";
 const FULL_NAME = "Aryan Kaushik";
-const TITLE = "Aryan Kaushik — Smart Contract Engineer";
+const TITLE = "Aryan Kaushik — Protocol Engineer";
 const DESCRIPTION =
-  "Smart Contract Engineer specializing in EVM blockchain architecture, Solidity, Foundry, OpenZeppelin, gas optimization, and Python data systems. Available for full-time roles and freelance projects.";
+  "Protocol Engineer and Python Systems Developer. Passionate about building robust decentralized applications, smart contract research, and off-chain infrastructure.";
 
 export const viewport: Viewport = {
   themeColor: "#39ff14",
