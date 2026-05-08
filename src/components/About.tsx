@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { personalInfo } from "@/data/portfolio";
 
 const highlights = [
-  { label: "Focus", value: "Blockchain & Data Systems" },
+  { label: "Focus", value: "Blockchain & Python Systems" },
   { label: "Chain", value: "EVM Ecosystem" },
   { label: "Status", value: "Open to Opportunities" },
   { label: "Location", value: "New Delhi, India" },
