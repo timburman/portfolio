@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-export const alt = "Aryan Kaushik — Smart Contract Engineer";
+export const runtime = "nodejs";
+export const alt = "Aryan Kaushik — Protocol Engineer & Python Systems Developer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

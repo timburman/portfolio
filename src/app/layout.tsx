@@ -11,9 +11,9 @@ const jetbrains = JetBrains_Mono({
 
 const SITE_URL = "https://aryankaushik.com";
 const FULL_NAME = "Aryan Kaushik";
-const TITLE = "Aryan Kaushik — Protocol Engineer";
+const TITLE = "Aryan Kaushik — Protocol Engineer & Python Systems Developer";
 const DESCRIPTION =
-  "Protocol Engineer and Python Systems Developer. Passionate about building robust decentralized applications, smart contract research, and off-chain infrastructure.";
+  "Official portfolio of Aryan Kaushik — Protocol Engineer and Python Systems Developer. Specialized in EVM architecture, gas optimization, smart contract security, and robust Python backends. Currently Software Engineer Intern at IRC Engineering Services.";
 
 export const viewport: Viewport = {
   themeColor: "#39ff14",
@@ -29,25 +29,33 @@ export const metadata: Metadata = {
     template: `%s | ${FULL_NAME}`,
   },
   description: DESCRIPTION,
+  applicationName: "Aryan Kaushik Portfolio",
+  referrer: "origin-when-cross-origin",
   keywords: [
     "Aryan Kaushik",
-    "Smart Contract Engineer",
-    "Solidity Developer",
+    "Aryan Kaushik Portfolio",
+    "Aryan Kaushik Resume",
+    "Aryan Kaushik Protocol Engineer",
+    "Aryan Kaushik Smart Contract Engineer",
+    "Aryan Kaushik Python Developer",
+    "Aryan Kaushik Blockchain Engineer",
+    "Aryan Kaushik IRC Engineering Services",
+    "Aryan Kaushik VIPS",
+    "Aryan Kaushik Amity",
+    "0xtimbur",
+    "timburman",
+    "Solidity Developer India",
     "Foundry",
     "Hardhat",
-    "EVM",
-    "Ethereum",
-    "Web3",
-    "Blockchain Architecture",
-    "DeFi",
-    "OpenZeppelin",
-    "Gas Optimization",
-    "Python",
-    "TypeScript",
-    "Portfolio",
-    "New Delhi",
-    "India",
-    "Hire Smart Contract Developer",
+    "EVM Gas Optimization",
+    "Ethereum Smart Contracts",
+    "Web3 Protocol Engineer",
+    "Python Automation Pipelines",
+    "FastAPI Developer",
+    "Reactive Governance DAO",
+    "Chronos Vault",
+    "Xandeum Network Explorer",
+    "New Delhi Software Engineer",
   ],
   authors: [{ name: FULL_NAME, url: SITE_URL }],
   creator: FULL_NAME,
@@ -56,6 +64,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
@@ -68,18 +77,22 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    type: "website",
+    type: "profile",
     locale: "en_US",
     url: SITE_URL,
-    siteName: FULL_NAME,
+    siteName: "Aryan Kaushik Portfolio",
     title: TITLE,
     description: DESCRIPTION,
+    firstName: "Aryan",
+    lastName: "Kaushik",
+    username: "0xtimbur",
+    gender: "male",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: `${FULL_NAME} — Smart Contract Engineer Portfolio`,
+        alt: `${FULL_NAME} — Protocol Engineer & Python Systems Developer`,
         type: "image/png",
       },
     ],
@@ -89,7 +102,8 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     images: ["/og-image.png"],
-    creator: "@aryankaushik",
+    creator: "@0xtimbur",
+    site: "@0xtimbur",
   },
   icons: {
     icon: "/icon.svg",
@@ -97,8 +111,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   verification: {
-    // Add your Google Search Console verification token here when ready:
-    // google: "your-google-site-verification-token",
+    google: "google-site-verification-token",
   },
 };
 

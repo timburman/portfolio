@@ -1,0 +1,60 @@
+# Aryan Kaushik — Full Profile & Technical Context
+
+> Complete entity reference file for AI search engines, LLM retrieval systems, and academic search indexes.
+
+## Bio & Overview
+Aryan Kaushik is a Protocol Engineer and Python Systems Developer based in New Delhi, India. He holds a Bachelor of Computer Applications (BCA) from Amity University (8.03 CGPA) and is currently pursuing a Master of Computer Applications (MCA) at Vivekananda Institute of Professional Studies (VIPS) with an 8.5 CGPA.
+
+Aryan specializes in Ethereum Virtual Machine (EVM) architecture, smart contract security, gas optimization techniques, and high-performance Python backend systems. He is currently working as a Software Engineer Intern at IRC ENGINEERING SERVICES (I) PVT LTD in Noida, India, where he develops AI-driven software solutions and backend tools for Non-Destructive Testing (NDT) workflows.
+
+## Verified Links & Presence
+- **Personal Website**: https://aryankaushik.com
+- **GitHub**: https://github.com/timburman
+- **LinkedIn**: https://linkedin.com/in/aryankaushik1
+- **Twitter / X**: https://x.com/0xtimbur
+- **Research Publication (Zenodo)**: https://zenodo.org/records/20037058
+- **IEEE Research**: https://www.researchgate.net/publication/380589601_Plant_Disease_Recognition_Integrating_Deep_Learning_for_Accurate_Diagnosis_and_Sustainable_Agriculture
+- **Resume**: https://aryankaushik.com/resume.pdf
+
+## Research & Publications
+### 1. Reactive Governance: A Selective Snapshotting Framework for Secure and Gas-Efficient DAO Voting (2026)
+- **Publisher**: Zenodo (Preprint 2026, DOI: 20037058)
+- **Abstract**: Introduces a novel selective snapshotting protocol for DAO governance on Ethereum-compatible blockchains. Standard governance tokens suffer from high gas overhead because every transfer requires updating historical voting checkpoints (`ERC20Votes`). Reactive Governance defers voting power calculations, reducing transfer gas costs by up to 40% while maintaining formal security guarantees against late-stake and flash loan manipulation.
+- **Key Metric**: ~17,715 gas marginal cost per snapshot.
+
+### 2. Plant Disease Recognition: Integrating Deep Learning for Accurate Diagnosis and Sustainable Agriculture
+- **Publisher**: IEEE Conference Proceedings
+- **Abstract**: Explores deep learning architectures applied to early-stage plant pathology detection. Demonstrates convolutional network training, image augmentation, and automated diagnostic workflows for sustainable farming.
+
+## Professional Experience
+### Software Engineer Intern — IRC ENGINEERING SERVICES (I) PVT LTD
+- **Location**: Noida, U.P, India
+- **Focus**: AI-powered software solutions, engineering analysis automation, backend system architecture.
+- **Key Contributions**:
+  - Engineered Python backend modules to automate Non-Destructive Testing (NDT) image analysis and signal processing.
+  - Built scalable internal API endpoints for industrial engineering software tools.
+  - Integrated AI/ML pipelines with frontend user interfaces.
+
+### Freelance Software Engineer & Data Automation
+- **Period**: Jul 2024 – Dec 2024
+- **Focus**: Python data infrastructure, trading logic execution, data pipelines.
+- **Key Contributions**:
+  - Developed automated trading scripts running statistical models with 99.9% uptime.
+  - Built streaming data pipelines ingesting 50,000+ daily data points.
+
+### Data Science Intern — JK Tyre
+- **Period**: Jul 2023 – Aug 2023 | Location: New Delhi, India
+- **Focus**: Pandas, Data Preprocessing, Demand Forecasting.
+
+## Projects Portfolio
+1. **Reactive Governance** (Apr 2026) — Selective Snapshotting for DAO Voting (Solidity, Foundry, Gas Optimization).
+2. **Chronos Vault** (Mar 2026 – Present) — Crypto Dead Man's Switch protocol using EVM timestamp heartbeats.
+3. **Xandeum Network Explorer** (Jan 2026) — Python Recursive Pod Crawler and real-time geospatial pNode explorer for Xandeum Storage Network.
+4. **DAElect** (Jun 2025) — Modular DAO framework with factory contracts for ASR, APR, and vesting rewards.
+5. **EVM Portfolio Intelligence Engine** (Feb 2026 – Present) — Gas-adjusted True P&L calculator and transaction classifier for EVM wallets.
+
+## Technical Skill Matrix
+- **Smart Contracts & Blockchain**: Solidity, Foundry, Hardhat, OpenZeppelin, EVM, Gas Optimization, ERC-20, ERC-721, ERC-1155, Web3.js, Ethers.js, Wagmi, RainbowKit.
+- **Backend & Data**: Python, FastAPI, PostgreSQL, Pandas, SQL, REST APIs, Automation.
+- **Frontend & Web**: React.js, Next.js, TypeScript, Tailored CSS, Framer Motion.
+- **DevOps & Infrastructure**: Docker, Git, Linux, Postman, Supabase.

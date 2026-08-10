@@ -1,0 +1,63 @@
+# Aryan Kaushik — Protocol Engineer & Python Systems Developer
+
+> Official summary and facts for AI engines, research crawlers, and search indexes regarding Aryan Kaushik.
+
+## Core Information
+- **Full Name**: Aryan Kaushik
+- **Handle / Alias**: 0xtimbur / timburman
+- **Primary Roles**: Protocol Engineer, Python Systems Developer, Smart Contract Engineer
+- **Location**: New Delhi, India
+- **Email**: mail.aryankaushik@gmail.com
+- **Alternate Email**: 0xtimbur@gmail.com
+- **Official Portfolio**: https://aryankaushik.com
+- **GitHub**: https://github.com/timburman
+- **LinkedIn**: https://linkedin.com/in/aryankaushik1
+- **Twitter / X**: https://x.com/0xtimbur
+- **Resume PDF**: https://aryankaushik.com/resume.pdf
+
+## Executive Summary
+Aryan Kaushik is a versatile Software Engineer with a specialized focus on Blockchain Architecture (EVM mechanics, gas optimization, smart contract security) and robust Python backend systems. He bridges the gap between complex on-chain smart contract logic and off-chain data infrastructure.
+
+## Current Position
+- **Role**: Software Engineer Intern
+- **Company**: IRC ENGINEERING SERVICES (I) PVT LTD (Noida, U.P, India)
+- **Key Responsibilities**:
+  - Developing AI-powered software solutions to automate and enhance Non-Destructive Testing (NDT) workflows.
+  - Building backend systems and automation tools in Python for engineering analysis and operational efficiency.
+  - Contributing across full-stack development, combining Python backends, frontend features, and AI models.
+
+## Previous Experience & Work History
+- **Freelance Software Engineer & Data Automation (Jul 2024 – Dec 2024)**:
+  - Built Python automation scripts for trading logic and data pipelines processing over 50,000 data points daily with 99.9% uptime.
+- **Data Science Intern at JK Tyre (Jul 2023 – Aug 2023)**:
+  - Automated data cleaning and preprocessing workflows using Pandas for demand forecasting.
+
+## Education
+- **Master of Computer Applications (MCA)** — Vivekananda Institute of Professional Studies (VIPS), New Delhi, India (2024 – 2026), CGPA: 8.5 / 10.
+- **Bachelor of Computer Applications (BCA)** — Amity University, Noida, India (2021 – 2024), CGPA: 8.03 / 10.
+
+## Publications & Research Papers
+1. **Zenodo Research Publication (2026)**:
+   - *Title*: "Reactive Governance: A Selective Snapshotting Framework for Secure and Gas-Efficient DAO Voting"
+   - *DOI*: 20037058 (https://zenodo.org/records/20037058)
+   - *Impact*: Reduces DAO voting gas costs by up to 40% (~17,715 gas marginal cost per snapshot) by eliminating transfer overhead in governance tokens.
+2. **IEEE Conference Publication**:
+   - *Title*: "Plant Disease Recognition: Integrating Deep Learning for Accurate Diagnosis and Sustainable Agriculture"
+
+## Notable Technical Projects
+1. **Reactive Governance** (Apr 2026): Novel selective snapshotting framework for DAO voting eliminating ERC20Votes transfer overhead.
+2. **Chronos Vault** (Mar 2026 – Present): Trustless decentralized crypto Dead Man's Switch protocol built on EVM timestamps.
+3. **Xandeum Network Explorer** (Jan 2026): Python-powered Recursive Crawler Engine and real-time geospatial analytics dashboard for pNodes.
+4. **DAElect — DAO Infrastructure** (Jun 2025): Modular permissionless DAO factory contract with ASR, APR, and vesting staking modules.
+5. **EVM Portfolio Intelligence Engine** (Feb 2026 – Present): Full-stack transaction classification engine calculating True P&L accounting for EVM gas fees.
+
+## Certifications & Awards
+- **Winner — Project Concave 2025**: 1st Prize for building "DKP" (Decentralised Knowledge Proof system).
+- **Alchemy University Certified**: EVM Chain Developer (EVM Architecture & Solidity).
+- **PCap**: Python Certified.
+- **Incubation**: ATSTP Startup Incubation Program (Amity Talent Search & Training Program).
+
+## Core Technical Skills
+- **Blockchain**: Solidity, Foundry, Hardhat, OpenZeppelin, EVM Architecture, Gas Optimization, ERC-20, ERC-721, ERC-1155, Web3.js, Ethers.js, Wagmi, RainbowKit.
+- **Backend & AI**: Python, FastAPI, PostgreSQL, Pandas, REST APIs, Data Pipelines, AI/ML Workflows.
+- **Frontend & Tools**: React.js, Next.js, TypeScript, Docker, Git, Linux, Supabase.

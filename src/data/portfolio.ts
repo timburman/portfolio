@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Protocol Engineer",
   subtitle: "Blockchain & Python Systems Dev",
   email: "mail.aryankaushik@gmail.com",
-  phone: "+91 79826 56751",
+  altEmail: "0xtimbur@gmail.com",
   location: "New Delhi, India",
   linkedin: "https://linkedin.com/in/aryankaushik1",
   twitter: "https://x.com/0xtimbur",
@@ -72,6 +72,20 @@ export const skillLevels: Record<string, number> = {
 };
 
 export const experience = [
+  {
+    company: "IRC Engineering Services (I) Pvt Ltd",
+    role: "Software Engineer Intern",
+    period: "Present",
+    location: "Noida, U.P, India",
+    points: [
+      "Developing AI-powered software solutions to automate and enhance Non-Destructive Testing (NDT) workflows.",
+      "Building backend systems and automation tools to improve engineering analysis and operational efficiency.",
+      "Contributing across the software stack, including backend development, frontend features, and AI-driven applications.",
+      "Collaborating with cross-functional Industry Experts to deliver scalable, production-ready solutions for industrial use.",
+      "Applying Python and modern software engineering practices to solve real-world engineering challenges.",
+    ],
+    tags: ["Python", "AI Solutions", "Backend", "Full Stack", "NDT Workflows"],
+  },
   {
     company: "Freelance",
     role: "Software Engineer & Data Automation — Python",
@@ -272,9 +286,11 @@ Hardhat:     ██████████░░ 82%
 PostgreSQL:  █████████░░░ 78%
 React/Next:  ████████░░░░ 75%`,
 
-  experience: `[1] Prolific Technologies  — Software Eng Intern (Jul–Dec 2024)
+  experience: `[1] IRC Engineering Services — Software Eng Intern (Present)
+    AI-powered NDT solutions, Python backend, full-stack automation
+[2] Freelance             — Software Eng & Data Automation (Jul–Dec 2024)
     Python automation, real-time data pipelines, 24/7 uptime
-[2] JK Tyre               — Data Science Intern (Jul–Aug 2023)
+[3] JK Tyre               — Data Science Intern (Jul–Aug 2023)
     Pandas data cleaning, demand forecasting`,
 
   projects: `[1] Chronos Vault  [In Progress]
@@ -287,7 +303,7 @@ React/Next:  ████████░░░░ 75%`,
     True P&L and Wallet Health analytics`,
 
   contact: `Email:    mail.aryankaushik@gmail.com
-Phone:    +91 79826 56751
+Alt Mail: 0xtimbur@gmail.com
 LinkedIn: linkedin.com/in/aryankaushik1
 Twitter:  x.com/0xtimbur
 GitHub:   github.com/timburman`,

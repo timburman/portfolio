@@ -147,7 +147,12 @@ export default function Hero() {
         }}
       />
 
-      <div className="hero-inner" style={{ position: "relative", zIndex: 10 }}>
+      <div
+        className="hero-inner"
+        style={{ position: "relative", zIndex: 10 }}
+        itemScope
+        itemType="https://schema.org/Person"
+      >
         <div style={{ maxWidth: "720px" }}>
           {/* Status badge */}
           <motion.div
@@ -180,7 +185,7 @@ export default function Hero() {
             className="font-bold leading-none tracking-tight"
             style={{ fontSize: "clamp(2.8rem, 7vw, 6rem)" }}
           >
-            <span style={{ color: "var(--text-primary)" }}>
+            <span style={{ color: "var(--text-primary)" }} itemProp="name">
               {personalInfo.name}
             </span>
           </motion.h1>
