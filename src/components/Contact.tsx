@@ -29,7 +29,7 @@ const contactItems = [
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/aryankaushik1",
+    value: "linkedin.com/in/aryan-kaushik1",
     href: "https://linkedin.com/in/aryan-kaushik1",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
